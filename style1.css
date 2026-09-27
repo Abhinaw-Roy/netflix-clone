@@ -233,6 +233,7 @@ header .dtxt form input{
     }
     #fw{
         flex-wrap: wrap;
+        gap: 10px;
     }
 }
 @media (min-width: 600px) {
@@ -483,4 +484,182 @@ li{
     padding: 0;
     grid-auto-rows: auto;
     
+}
+
+
+
+/* ===== MOBILE FIXES ===== */
+@media (50px <= width <= 768px) {
+
+
+    /* 1. TOP FIXED OFFER BAR */
+    .head {
+        font-size: 15px;
+        height: 45px;
+    }
+    /* Top logo + language + sign in */
+    .Logo1 {
+        width: 90vw;
+        top: 55px;
+        flex-wrap: nowrap;
+    }
+
+    .logo div img {
+        width: 100px;
+        height: auto;
+    }
+
+    .tog {
+        column-gap: 8px;
+    }
+
+    .lang {
+        width: 90px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+    .sign {
+        width: 65px;
+        height: 30px;
+        font-size: 16px;
+    }
+
+
+    /* Hero text */
+    .text {
+        width: 90vw;
+        max-width: none;
+        top: 300px;
+    }
+
+    .text h1 {
+        font-size: 34px;
+    }
+
+    .text p {
+        font-size: 16px;
+    }
+
+
+    /* Email + button */
+    .dtxt {
+        width: 90vw;
+        gap: 6px;
+    }
+
+    .dtxt form {
+        flex: 1;
+        min-width: 0;
+    }
+
+    header .dtxt form input {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 15px;
+    }
+
+    /* 2. TRENDING NOW */
+    .tn {
+        width: 80vw;
+        left: -33px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        font-size: 32px;
+    }
+
+    .try {
+        flex: 0.9;
+        width: auto;
+        font-size: 17px;
+    }
+
+    .try h2{
+        font-size: 14px;
+    }
+
+
+    /* Reason cards */
+
+    .card {
+        width: 90vw;
+        gap: 0px;
+    }
+
+    .c1,.c1 img {
+        width: 164px;
+        height: 184px;
+    }
+
+    .ctxt {
+        font-size: 84px;
+        right: 166px;
+        top: 103px;
+    }
+
+    .box4 {
+        width: 75vw;
+        padding: 12px;
+        font-size: 16px;
+    }
+
+    .box4 h3 {
+        padding-top: 5px;
+        padding-bottom: 20px;
+        font-size: 21px;
+    }
+
+
+    /* Footer */
+
+    #FAQ{
+        left: -14px;
+        font-size: larger !important;
+    }
+
+    footer article {
+        width: 80vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .faq {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+
+    .faq p:last-child {
+    width: 60px;
+    flex-shrink: 0;
+    text-align: center;
+    font-size: 38px;
+    align-self: center;
+    }
+
+    .dtxt2{gap: 0px;
+    width: 90vw;
+    }
+
+    .dtxt2 form input {
+    height: 56px;
+    width: 127px;
+    position: relative;
+    right: 12px;
+    }
+
+    .footer-links {
+        width: 100%;
+        grid-template-columns: 1fr;
+        box-sizing: border-box;
+    }
+
+    footer article p {
+        width: 100%;
+    }
+
+    .small {
+        width: 100%;
+    }
 }
